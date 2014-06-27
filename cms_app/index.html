@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Custom ValidateBox Tooltip - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="./js/jquery-easyui-1.3.6/themes/metro/easyui.css">
+	<link rel="stylesheet" type="text/css" href="./js/jquery-easyui-1.3.6/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="./js/jquery-easyui-1.3.6/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-easyui-1.3.6/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>氧气后台</h2>
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-layout" style="width:700px;height:500px;">
+
+		<div data-options="region:'west',split:true" title="Menus" style="width:140px;">
+		
+		<div class="easyui-panel" style="padding:5px">
+			<!--<ul class="easyui-tree" data-options="url:'metadata/tree_data1.json',method:'get',animate:true"></ul>
+			
+			--!>
+			
+			<ul id="tt" class="easyui-tree" data-options="animate:true">
+				<li>
+					<span>Collection</span>
+					<ul>
+					<li>列表</li>
+					<li>添加</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		</div>
+		<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+			<div id="content_p" class="easyui-panel"  title="My Panel" >
+			
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+$('#tt').tree({
+	onClick: function(node){
+		//alert(node.text);  // alert node text property when clicked
+		
+		if (node.text == "列表")
+		{
+			$('#content_p').panel('refresh','./collections/list.html');
+		}
+	}
+});
+</script>
+</html>
