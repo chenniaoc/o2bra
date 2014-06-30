@@ -1,0 +1,395 @@
+{% extends 'header.html' %}
+			{% block content %}
+			<div id="content" class="span10">
+			<!-- content starts -->
+			
+			{{ upai_policy }}
+			
+			{{ signature }}
+			<div>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Home</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sortable row-fluid">
+					<div class="box span12">
+					<div class="box-header well" data-original-title>
+						<h2><i class="icon-edit"></i> 添加/编辑 Collections</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+						<form class="form-horizontal">
+							<fieldset>
+							  <div class="control-group">
+								<label class="control-label" for="focusedInput">编号</label>
+								<div class="controls">
+								  <span class="input-xlarge uneditable-input">000001</span>
+								</div>
+							  </div>
+	
+							  <div class="control-group">
+								<label class="control-label" for="disabledInput">买手</label>
+								<div class="controls">
+								  <select id="selectError3">
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+									<option>Option 4</option>
+									<option>Option 5</option>
+								  </select>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label" for="disabledInput">主打单品类型</label>
+								<div class="controls">
+								  <select id="selectError3">
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+									<option>Option 4</option>
+									<option>Option 5</option>
+								  </select>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label">场景标签</label>
+								<div class="controls">
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> Option 1
+								  </label>
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> Option 2
+								  </label>
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> Option 3
+								  </label>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label">款式亮点</label>
+								<div class="controls">
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> Option 1
+								  </label>
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> Option 2
+								  </label>
+								  <label class="checkbox inline">
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> Option 3
+								  </label>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label" for="focusedInput">材质颜色</label>
+								<div class="controls">
+								  <input type="text" id="inputWarning">
+								  <span class="help-inline">输入颜色，如“黑色”</span>
+								  <input type="text" id="inputWarning">
+								  <span class="help-inline">输入材质，如“棉”</span>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label" for="focusedInput">参考价格：</label>
+								<div class="controls">
+								  <input type="text" id="inputWarning">
+								  <input type="text" id="inputWarning">
+								  <span class="help-inline">备注文字（最多6个字）</span>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label" for="focusedInput">参考价格：</label>
+								<div class="controls">
+								  <input type="text" id="inputWarning">
+								  <input type="text" id="inputWarning">
+								  <span class="help-inline">备注文字（最多6个字）</span>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label" for="disabledInput">品牌名称</label>
+								<div class="controls">
+								  <select id="selectError3">
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+									<option>Option 4</option>
+									<option>Option 5</option>
+								  </select>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label" for="disabledInput">样品尺寸</label>
+								<div class="controls">
+								  <select id="selectError3">
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+									<option>Option 4</option>
+									<option>Option 5</option>
+								  </select>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label" for="focusedInput">一句话故事</label>
+								<div class="controls">
+								  <input type="text" id="inputWarning">
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label" for="textarea2">封面故事</label>
+								<div class="controls">
+								  <textarea class="cleditor" id="textarea2" rows="3"></textarea>
+								</div>
+							  </div>
+							  
+							  
+							  <div class="control-group">
+								<label class="control-label">封面图片</label>
+								<div class="controls">
+										<input type="file" name="file" id="file_upload_1"/>
+										<img id="cover_1" class="scale" alt="preview"/>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<label class="control-label">滤镜图片（最多3张）</label>
+								<div class="controls">
+
+								  <input type="file" name="file" id="file_upload_2"/>
+<!-- 								  <input type="file" name="file" id="file_upload_3"/>
+								  <input type="file" name="file" id="file_upload_4"/> -->
+								  
+								  <img id="filter_1" class="scale" alt="preview"/>
+								  <img id="filter_2" class="scale" alt="preview"/>
+								  <img id="filter_3" class="scale" alt="preview"/>
+
+								</div>
+							  </div>
+							  
+							  
+							  
+							  </div>
+							  <div class="form-actions">
+								<button type="submit" class="btn btn-primary">提交</button>
+								<button class="btn">取消</button>
+							  </div>
+							</fieldset>
+						  </form>
+					
+					</div>
+				</div><!--/span-->
+				
+				
+				<!-- test upyun -->
+<!-- 				<div>
+					<form action="http://v0.api.upyun.com/o2bratest" method="post" enctype="multipart/form-data">
+						<input type="file" name="file" id="file_upload_1"/>
+					</form>
+				</div> -->
+				
+				<script type="text/javascript">
+					$(function() {
+						$("#file_upload_1").uploadify({
+							height        : 30,
+							swf           : '/static/misc/uploadify.swf',
+							uploader      : 'http://v0.api.upyun.com/o2bratest',
+							width         : 120,
+							'fileObjName' : 'file',
+							'formData' : { 'policy' : '{{upai_policy}}',
+											'signature' : '{{signature}}',
+							},
+							'onUploadSuccess' : function(file, data, response) {
+								
+								dataJson = $.parseJSON( data );
+								$('#cover_1').attr('src','http://o2bratest.b0.upaiyun.com/'+dataJson.url);
+	
+					            //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + dataJson.url);
+					        },
+					        'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+					            alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+					        },
+						});
+						
+						
+						var filterCount = 0;
+						$("#file_upload_2").uploadify({
+							height        : 30,
+							swf           : '/static/misc/uploadify.swf',
+							uploader      : 'http://v0.api.upyun.com/o2bratest',
+							width         : 120,
+							'fileObjName' : 'file',
+							'formData' : { 'policy' : '{{upai_policy}}',
+											'signature' : '{{signature}}',
+							},
+							'onQueueComplete' : function(queueData) {
+					            //alert(queueData.uploadsSuccessful + ' files were successfully uploaded.');
+					            filterCount = 0;
+					        },
+							'onUploadSuccess' : function(file, data, response) {
+								
+								dataJson = $.parseJSON( data );
+								filterCount++;
+								$('#filter_'+ filterCount).attr('src','http://o2bratest.b0.upaiyun.com/'+dataJson.url);
+
+					            //alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + dataJson.url);
+					        },
+					        'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+					            alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+					        },
+					        
+						});
+						
+/* 						$("#file_upload_3").uploadify({
+							height        : 30,
+							swf           : '/static/misc/uploadify.swf',
+							uploader      : 'http://v0.api.upyun.com/o2bratest',
+							width         : 120,
+							'fileObjName' : 'file',
+							'formData' : { 'policy' : '{{upai_policy}}',
+											'signature' : '{{signature}}',
+							}
+						});
+						
+						$("#file_upload_4").uploadify({
+							height        : 30,
+							swf           : '/static/misc/uploadify.swf',
+							uploader      : 'http://v0.api.upyun.com/o2bratest',
+							width         : 120,
+							'fileObjName' : 'file',
+							'formData' : { 'policy' : '{{upai_policy}}',
+											'signature' : '{{signature}}',
+							}
+						}); */
+					});
+				
+				</script>
+				
+			{% endblock %}
+<!-- 			</div>
+			
+			
+				
+		<hr>
+
+		<div class="modal hide fade" id="myModal">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Settings</h3>
+			</div>
+			<div class="modal-body">
+				<p>Here settings can be configured...</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn" data-dismiss="modal">Close</a>
+				<a href="#" class="btn btn-primary">Save changes</a>
+			</div>
+		</div>
+
+		<footer>
+			<p class="pull-left">&copy; <a href="#" target="_blank">O2Bra</a> 2014</p>
+			<p class="pull-right">Powered by: <a href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
+		</footer>
+		
+	</div>/.fluid-container -->
+
+<!-- <!-- 	external javascript
+	==================================================
+	Placed at the end of the document so the pages load faster
+	jQuery
+	<script src="/static/js/jquery-1.7.2.min.js"></script>
+	jQuery UI
+	<script src="/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+	transition / effect library
+	<script src="/static/js/bootstrap-transition.js"></script>
+	alert enhancer library
+	<script src="/static/js/bootstrap-alert.js"></script>
+	modal / dialog library
+	<script src="/static/js/bootstrap-modal.js"></script>
+	custom dropdown library
+	<script src="/static/js/bootstrap-dropdown.js"></script>
+	scrolspy library
+	<script src="/static/js/bootstrap-scrollspy.js"></script>
+	library for creating tabs
+	<script src="/static/js/bootstrap-tab.js"></script>
+	library for advanced tooltip
+	<script src="/static/js/bootstrap-tooltip.js"></script>
+	popover effect library
+	<script src="/static/js/bootstrap-popover.js"></script>
+	button enhancer library
+	<script src="/static/js/bootstrap-button.js"></script>
+	accordion library (optional, not used in demo)
+	<script src="/static/js/bootstrap-collapse.js"></script>
+	carousel slideshow library (optional, not used in demo)
+	<script src="/static/js/bootstrap-carousel.js"></script>
+	autocomplete library
+	<script src="/static/js/bootstrap-typeahead.js"></script>
+	tour library
+	<script src="/static/js/bootstrap-tour.js"></script>
+	library for cookie management
+	<script src="/static/js/jquery.cookie.js"></script>
+	calander plugin
+	<script src='/static/js/fullcalendar.min.js'></script>
+	data table plugin
+	<script src='/static/js/jquery.dataTables.min.js'></script>
+
+	chart libraries start
+	<script src="/static/js/excanvas.js"></script>
+	<script src="/static/js/jquery.flot.min.js"></script>
+	<script src="/static/js/jquery.flot.pie.min.js"></script>
+	<script src="/static/js/jquery.flot.stack.js"></script>
+	<script src="/static/js/jquery.flot.resize.min.js"></script>
+	chart libraries end
+
+	select or dropdown enhancer
+	<script src="/static/js/jquery.chosen.min.js"></script>
+	checkbox, radio, and file input styler
+	<script src="/static/js/jquery.uniform.min.js"></script>
+	plugin for gallery image view
+	<script src="/static/js/jquery.colorbox.min.js"></script>
+	rich text editor library
+	<script src="/static/js/jquery.cleditor.min.js"></script>
+	notification plugin
+	<script src="/static/js/jquery.noty.js"></script>
+	file manager library
+	<script src="/static/js/jquery.elfinder.min.js"></script>
+	star rating plugin
+	<script src="/static/js/jquery.raty.min.js"></script>
+	for iOS style toggle switch
+	<script src="/static/js/jquery.iphone.toggle.js"></script>
+	autogrowing textarea plugin
+	<script src="/static/js/jquery.autogrow-textarea.js"></script>
+	multiple file upload plugin
+	<script src="/static/js/jquery.uploadify-3.1.min.js"></script>
+	history.js for cross-browser state change on ajax
+	<script src="/static/js/jquery.history.js"></script>
+	application script for Charisma demo
+	<script src="/static/js/charisma.js"></script> 
+	 --> -->
+	
+<!-- <!-- 		
+</body>
+</html> -->
+
